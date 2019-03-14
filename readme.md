@@ -1,4 +1,4 @@
-[手机端预览效果](https://htmlpreview.github.io/?https://github.com/Xudake/poster/master/index.html)
+[手机端预览效果](http://m-test.yhouse.com/m/jinli-poster/)
 
 <!-- ![image](https://f.yhres.com/ypass/poster2/erlan.png) -->
 
