@@ -1,0 +1,107 @@
+body,html,ul,p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+    font: 0.12rem 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', Arial, sans-serif, "san francisco", "HelveticaNeue-Light", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei";
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.main {
+    text-align: center;
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main .swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+.main .swiper-slide {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .poster {
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+
+.main .poster .poster-bg {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .poster-top {
+    position: absolute;
+    bottom: 0.2rem;
+    width: 100%;
+    text-align: center;
+    color: #8076a3;
+}
+
+.main #qrcode1 {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    overflow: hidden;
+}
+
+.main .btn {
+    margin-top: 0.2rem;
+    display: inline-block;
+    padding: 0.05rem 0.1rem;
+    border-radius: 0.06rem;
+    border: 0.01rem solid #ddd;
+    color: #555;
+}
+
+.main .btns {
+    margin-top: 0.2rem;
+    color: #555;
+}
+
+.main .btns .close {
+    margin-top: 0.2rem;
+    display: inline-block;
+    padding: 0.05rem 0.1rem;
+    border-radius: 0.06rem;
+    border: 0.01rem solid #ddd;
+    color: #555;
+}
+
+.img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.img-box img {
+    width: 100%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script type="text/javascript">
+
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 375 * 100 + 'px';
+        
+        var __rigPageType = "landing_page";
+
+    </script>
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(http://placekitten.com/1300/1800)">
+                    <div class="poster-top">
+                        <div class="photo-box">
+                            <img :src="picUrl" class="photo" crossOrigin="anonymous">
+                        </div>
+                        <div class="info">
+                            <div class="name">刘德华</div>
+                            <div>上海才华有限公司</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(http://placekitten.com/g/1200/1800)">
+                    <div class="poster-top">
+                        <div class="photo-box">
+                            <img :src="picUrl" class="photo" crossOrigin="anonymous">
+                        </div>
+                        <div class="info">
+                            <div class="name">刘德华</div>
+                            <div>上海才华有限公司</div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="swiper-slide" style="background-image: url(http://placekitten.com/g/1100/1800)">
+                    <div class="poster-top">
+                        <div class="photo-box">
+                            <img :src="picUrl" class="photo" crossOrigin="anonymous">
+                        </div>
+                        <div class="info">
+                            <div class="name">刘德华</div>
+                            <div>上海才华有限公司</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination"></div> -->
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        
+        <!-- 海报div -->
+        <div class="poster">
+            <div class="poster-bg" :style="{'backgroundImage': 'url('+posterUrl+')'}"></div>
+            <div class="poster-top">
+                <div class="photo-box">
+                    <img :src="picUrl" class="photo" crossOrigin="anonymous">
+                </div>
+                <div class="info">
+                    <div class="name">刘德华</div>
+                    <div>上海才华有限公司</div>
+                </div>
+            </div>
+            <div id="qrcode1"></div>
+        </div>
+
+        <div class="btn" @click="showPoster()" v-if="showBtn">生成海报</div>
+
+        <div class="btns" v-if="!showBtn">
+            <div>长按海报分享</div>
+            <div class="close" @click="reShowPoster()">重新生成海报</div>
+        </div>
+
+        <div class="img-box"></div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+<script src="//f.yhres.com/20171213/jquery.min.js"></script>
+<script src="//f.yhres.com/brand/jquery.qrcode.js"></script>
+<script src="//f.yhres.com/brand/qrcode.js"></script>
+
+<!---->
+<script src="//f.yhres.com/ypass/poster/html2canvas.min.js"></script>
+<script src="//f.yhres.com/ypass/poster/canvas2image.js"></script>
+
+<script src="//r.yhres.com/toufang/lib/vue.js"></script>
+
+<script src="./js/index.js"></script>
